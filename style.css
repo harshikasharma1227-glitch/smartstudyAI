@@ -1,0 +1,383 @@
+
+/* GENERAL STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f7f5ff;
+    color: #292344;
+}
+
+/* NAVIGATION */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: white;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #392b69;
+}
+
+.logo span {
+    color: #9675e8;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #51496c;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #9675e8;
+}
+
+.login-btn {
+    background: #eee8ff;
+    color: #7252c7;
+    border: none;
+    padding: 11px 23px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* HERO SECTION */
+.hero {
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 10%;
+    gap: 50px;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.tagline {
+    color: #9474df;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-size: 62px;
+    line-height: 1.15;
+    color: #30234f;
+    margin-bottom: 22px;
+}
+
+.description {
+    color: #77718b;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.start-btn {
+    background: linear-gradient(135deg, #9474df, #7050c5);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(112,80,197,0.2);
+}
+
+.start-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(112,80,197,0.3);
+}
+
+/* HERO CARD */
+.hero-image {
+    width: 390px;
+    height: 330px;
+    background: linear-gradient(135deg, #e9ddff, #f4eaff);
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 15px 40px rgba(112,80,197,0.12);
+}
+
+.study-card {
+    background: white;
+    padding: 45px 30px;
+    border-radius: 25px;
+    text-align: center;
+    width: 80%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.study-card span {
+    font-size: 65px;
+}
+
+.study-card h2 {
+    margin: 18px 0 10px;
+    color: #4c367e;
+    font-size: 21px;
+}
+
+.study-card p {
+    color: #8c829f;
+    font-size: 14px;
+}
+
+/* FEATURES SECTION */
+.features {
+    padding: 80px 8%;
+    text-align: center;
+    background: white;
+}
+
+.features h2 {
+    font-size: 34px;
+    color: #30234f;
+}
+
+.section-description {
+    color: #89839a;
+    margin: 15px 0 45px;
+}
+
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+/* FEATURE CARDS */
+.feature-card {
+    padding: 32px 24px;
+    border-radius: 24px;
+    background: linear-gradient(145deg, #ffffff, #f8f5ff);
+    border: 1px solid #e9e0ff;
+    box-shadow: 0 8px 25px rgba(75, 48, 130, 0.06);
+    transition: all 0.3s ease;
+    text-align: left;
+    min-width: 0;
+}
+
+.feature-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(112,80,197,0.14);
+    border-color: #c8b5ff;
+}
+
+.feature-card > span {
+    font-size: 42px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.feature-card h3 {
+    margin: 12px 0;
+    color: #503b80;
+    font-size: 21px;
+}
+
+.feature-card p {
+    color: #89839a;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+/* INPUTS AND TEXT AREAS */
+.feature-card input,
+.feature-card textarea {
+    width: 100%;
+    padding: 13px 15px;
+    margin: 9px 0;
+    border: 1px solid #ded5f5;
+    border-radius: 12px;
+    background: white;
+    color: #392b69;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.feature-card textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.feature-card input:focus,
+.feature-card textarea:focus {
+    border-color: #9675e8;
+    box-shadow: 0 0 0 3px rgba(150,117,232,0.12);
+}
+
+.feature-card input::placeholder,
+.feature-card textarea::placeholder {
+    color: #aaa1bd;
+}
+
+/* FEATURE BUTTONS */
+.feature-card button {
+    background: linear-gradient(135deg, #9675e8, #7050c5);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.feature-card button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 15px rgba(112,80,197,0.2);
+}
+
+/* OUTPUT BOXES */
+#doubtAnswer,
+#summaryOutput,
+#quizContainer,
+#flashcardList,
+#taskList {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 14px;
+    background: #f0eaff;
+    color: #493575;
+    text-align: left;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+/* QUIZ DESIGN */
+#quizContainer label {
+    display: block;
+    background: white;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 9px;
+    cursor: pointer;
+    border: 1px solid #e4dafb;
+}
+
+#quizContainer label:hover {
+    background: #f8f4ff;
+}
+
+#quizContainer input[type="radio"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+/* FLASHCARD DESIGN */
+#flashcardList > div {
+    background: white;
+    border: 1px solid #ded5f5;
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 12px;
+}
+
+#flashcardList h4 {
+    color: #503b80;
+    margin-bottom: 8px;
+}
+
+/* STUDY PLANNER DESIGN */
+#taskList > div {
+    background: white;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    border-left: 4px solid #9675e8;
+}
+
+/* ABOUT SECTION */
+.about {
+    padding: 80px 15%;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 32px;
+    color: #392b69;
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: #817a94;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* FOOTER */
+footer {
+    background: #30234f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+
+    header {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 390px;
+    }
+
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about {
+        padding: 60px 8%;
+    }
+}

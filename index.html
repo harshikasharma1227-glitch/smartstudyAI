@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartStudy AI | Your Personal Study Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">SmartStudy <span>AI</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <button class="login-btn">Get Started</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <p class="tagline">YOUR PERSONAL AI STUDY PARTNER</p>
+
+            <h1>Study Smarter.<br>
+                Not Harder.</h1>
+
+            <p class="description">
+                Your learning journey just got easier.
+                Understand difficult topics, create notes,
+                generate quizzes and organize your studies
+                with the power of AI.
+            </p>
+
+            <button class="start-btn" onclick="showWelcome()">
+                Start Learning →
+            </button>
+        </div>
+
+        <div class="hero-image">
+            <div class="study-card">
+                <span>📚</span>
+                <h2>Learn. Grow. Succeed.</h2>
+                <p>Your AI-powered learning companion.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+
+        <h2>Everything You Need to Learn Better</h2>
+
+        <p class="section-description">
+            Powerful AI tools designed to make studying easier.
+        </p>
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+    <span>🤖</span>
+    <h3>AI Doubt Solver</h3>
+    <p>Get explanations for difficult questions.</p>
+
+    <textarea 
+        id="doubtQuestion"
+        placeholder="Ask your question here..."
+    ></textarea>
+
+   <button onclick="event.stopPropagation(); solveDoubt()">
+    Solve My Doubt
+</button>
+
+    <div id="doubtAnswer"></div>
+</div>
+
+          <div class="feature-card">
+    <span>📝</span>
+    <h3>Notes Summarizer</h3>
+    <p>Turn lengthy notes into simple summaries.</p>
+
+    <textarea
+        id="notesInput"
+        placeholder="Paste your notes here..."
+    ></textarea>
+
+    <button onclick="event.stopPropagation(); summarizeNotes()">
+        Summarize Notes
+    </button>
+
+    <div id="summaryOutput"></div>
+</div>
+
+           <div class="feature-card">
+    <span>🧠</span>
+    <h3>Quiz Generator</h3>
+    <p>Create a quiz from your study topic.</p>
+
+    <textarea
+    id="quizTopic"
+    placeholder="Paste your study notes here..."
+></textarea>
+
+    <button onclick="event.stopPropagation(); generateQuiz()">
+        Generate Quiz
+    </button>
+
+    <div id="quizContainer"></div>
+</div>
+
+            <div class="feature-card">
+    <span>🎴</span>
+    <h3>Flashcard Maker</h3>
+    <p>Create flashcards for quick revision.</p>
+
+    <input
+        type="text"
+        id="flashQuestion"
+        placeholder="Enter your question..."
+    >
+
+    <textarea
+        id="flashAnswer"
+        placeholder="Enter your answer..."
+    ></textarea>
+
+    <button onclick="event.stopPropagation(); createFlashcard()">
+        Create Flashcard
+    </button>
+
+    <div id="flashcardList"></div>
+</div>
+
+           <div class="feature-card">
+    <span>📅</span>
+    <h3>Study Planner</h3>
+    <p>Organize your study schedule effectively.</p>
+
+    <input
+        type="text"
+        id="studyTask"
+        placeholder="Enter your study task..."
+    >
+
+    <input
+        type="date"
+        id="studyDate"
+    >
+
+    <button onclick="event.stopPropagation(); addTask()">
+        Add Task
+    </button>
+
+    <div id="taskList"></div>
+</div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>Made for Students, Powered by AI.</h2>
+        <p>
+            SmartStudy AI brings all your essential study tools
+            together in one place to make learning more productive
+            and enjoyable.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 SmartStudy AI | Learn Smarter, Every Day.</p>
+    </footer>
+<script src="script.js"></script>
+
+<script>
+    testBackend();
+</script>
+
+</body>
+</html>
