@@ -38,8 +38,7 @@ if (
 // Test Backend Connection
 async function testBackend() {
     try {
-        const response = await fetch("http://localhost:3000/test");
-
+        const response = await fetch("/test");
         const data = await response.json();
 
         console.log(data.message);
@@ -60,7 +59,7 @@ async function solveDoubt() {
     answerBox.innerText = "Sending your question...";
 
     try {
-        const response = await fetch("http://localhost:3000/solve", {
+        const response = await fetch("/solve", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
